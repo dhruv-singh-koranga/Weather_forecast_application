@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- weather forecast application project -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App Project JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+  <body id="background-container">
+    <!-- heading of weather forecast app  -->
+    <h1><div class="logo"><span>Weather</span> Forecast <span>Application</span></div></h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3 id="text">Enter a City Name</h3>
+        <input class="city-input city-data" id="dropdown-input" type="text"  placeholder="E.g., India, China, Tokyo" >
+        <div id="dropdown-input">
+
+        <div id="dropdown-menu" class="dropdown-menu" >
+          <ul style="overflow: scroll; height: 180px; width: 100%;overflow: auto" >
+            <li><a href="#">India</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">China</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Japan</a></li>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Madhya pradesh</a></li>
+            <li><a href="#">Newyork</a></li>
+            <li><a href="#">America</a></li>
+          
+          </ul>
+        </div>
+      </div>
+        <button class="search-btn gradient-btn shadow-btn button" id="search-button"><span class="button-text">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        Search 
+        </span>
+      </button>
+        <div class="separator"></div>
+        <button class="location-btn glow-button" id="change-background"><i class="fa-solid fa-location-dot"></i>Use Current Location</button>
+      </div>
+      <!--  current weather data for loaction  -->
+      <div class="weather-data">
+        <h2>Today weather</h2>
+        <div class="current-weather">
+          
+          <div class="details">
+            <h2>_______ ( ______ )</h2>
+            <h6>Temperature: __°C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </div>
+        </div>
+        <!--  5 days forecast for entered city  -->
+        <div class="days-forecast">
+          <h2 >5-Day Weather Forecast </h2>
+          <ul class="weather-cards">
+            <li class="card gradient-element">  
+              <h3> 1st Day</h3>    <!-- 1st day weather  -->
+              <h3>( ______ )</h3>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card gradient-element">  
+              <h3>2nd Day</h3>       <!-- 2nd day weather  -->
+              <h4>( ______ )</h4>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card gradient-element"> 
+              <h3>3rd Day</h3>         <!-- 3rd day weather  -->
+              <h4>( ______ )</h4>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card gradient-element">  
+              <h3>4th Day</h3>        <!-- 4th day weather  -->
+              <h4>( ______ )</h4>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            <li class="card gradient-element">
+              <h3>5th Day</h3>          <!-- 5th day weather  -->
+              <h4>( ______ )</h4>
+              <h6>Temp: __C</h6>
+              <h6>Wind: __ M/S</h6>
+              <h6>Humidity: __%</h6>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
